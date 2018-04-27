@@ -15,6 +15,8 @@
 		48E180902092EF5F00DEC920 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E1808F2092EF5F00DEC920 /* main.m */; };
 		48E1809A2092EF5F00DEC920 /* PACFMDBDatabaseManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E180992092EF5F00DEC920 /* PACFMDBDatabaseManagerTests.m */; };
 		48E180A52092EF5F00DEC920 /* PACFMDBDatabaseManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E180A42092EF5F00DEC920 /* PACFMDBDatabaseManagerUITests.m */; };
+		48E180B520930BB300DEC920 /* PACDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E180B420930BB300DEC920 /* PACDataBaseManager.m */; };
+		E7CC2B9D3FF43CDB066255E7 /* libPods-PACFMDBDatabaseManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D2AA92D4D7BD2DA8447ADC /* libPods-PACFMDBDatabaseManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1246AFAE82B27E7BCD29F9BB /* Pods-PACFMDBDatabaseManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACFMDBDatabaseManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PACFMDBDatabaseManager/Pods-PACFMDBDatabaseManager.debug.xcconfig"; sourceTree = "<group>"; };
+		13D2AA92D4D7BD2DA8447ADC /* libPods-PACFMDBDatabaseManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PACFMDBDatabaseManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1807D2092EF5E00DEC920 /* PACFMDBDatabaseManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PACFMDBDatabaseManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E180802092EF5E00DEC920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E180812092EF5E00DEC920 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		48E180A02092EF5F00DEC920 /* PACFMDBDatabaseManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PACFMDBDatabaseManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E180A42092EF5F00DEC920 /* PACFMDBDatabaseManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PACFMDBDatabaseManagerUITests.m; sourceTree = "<group>"; };
 		48E180A62092EF5F00DEC920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E180B320930BB300DEC920 /* PACDataBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PACDataBaseManager.h; sourceTree = "<group>"; };
+		48E180B420930BB300DEC920 /* PACDataBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PACDataBaseManager.m; sourceTree = "<group>"; };
+		5898AD096F2518736F89B48D /* Pods-PACFMDBDatabaseManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PACFMDBDatabaseManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-PACFMDBDatabaseManager/Pods-PACFMDBDatabaseManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CC2B9D3FF43CDB066255E7 /* libPods-PACFMDBDatabaseManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				48E180982092EF5F00DEC920 /* PACFMDBDatabaseManagerTests */,
 				48E180A32092EF5F00DEC920 /* PACFMDBDatabaseManagerUITests */,
 				48E1807E2092EF5E00DEC920 /* Products */,
+				F9DEE900A9E49E19A9378CF9 /* Pods */,
+				567C5D4FF2E4A01DA6B8AA56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +111,7 @@
 		48E1807F2092EF5E00DEC920 /* PACFMDBDatabaseManager */ = {
 			isa = PBXGroup;
 			children = (
+				48E180B22092F3E100DEC920 /* Class */,
 				48E180802092EF5E00DEC920 /* AppDelegate.h */,
 				48E180812092EF5E00DEC920 /* AppDelegate.m */,
 				48E180832092EF5E00DEC920 /* ViewController.h */,
@@ -132,6 +143,32 @@
 			path = PACFMDBDatabaseManagerUITests;
 			sourceTree = "<group>";
 		};
+		48E180B22092F3E100DEC920 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				48E180B320930BB300DEC920 /* PACDataBaseManager.h */,
+				48E180B420930BB300DEC920 /* PACDataBaseManager.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		567C5D4FF2E4A01DA6B8AA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D2AA92D4D7BD2DA8447ADC /* libPods-PACFMDBDatabaseManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9DEE900A9E49E19A9378CF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1246AFAE82B27E7BCD29F9BB /* Pods-PACFMDBDatabaseManager.debug.xcconfig */,
+				5898AD096F2518736F89B48D /* Pods-PACFMDBDatabaseManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48E180A92092EF5F00DEC920 /* Build configuration list for PBXNativeTarget "PACFMDBDatabaseManager" */;
 			buildPhases = (
+				D04702A0A73BEE5ED593AF73 /* [CP] Check Pods Manifest.lock */,
 				48E180792092EF5E00DEC920 /* Sources */,
 				48E1807A2092EF5E00DEC920 /* Frameworks */,
 				48E1807B2092EF5E00DEC920 /* Resources */,
@@ -257,6 +295,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D04702A0A73BEE5ED593AF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PACFMDBDatabaseManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48E180792092EF5E00DEC920 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +324,7 @@
 				48E180852092EF5E00DEC920 /* ViewController.m in Sources */,
 				48E180902092EF5F00DEC920 /* main.m in Sources */,
 				48E180822092EF5E00DEC920 /* AppDelegate.m in Sources */,
+				48E180B520930BB300DEC920 /* PACDataBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +491,7 @@
 		};
 		48E180AA2092EF5F00DEC920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1246AFAE82B27E7BCD29F9BB /* Pods-PACFMDBDatabaseManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +508,7 @@
 		};
 		48E180AB2092EF5F00DEC920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5898AD096F2518736F89B48D /* Pods-PACFMDBDatabaseManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
